@@ -7,6 +7,7 @@ name = "pypi"
 numpy = "*"
 flake8 = "*"
 black = "*"
+isort = "*"
 
 [dev-packages]
 

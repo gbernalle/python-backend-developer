@@ -1,7 +1,6 @@
-import sys
 import os
+import sys
+
 import pandas
 
-
-
-frutas = ['pera', 'maçã']
+frutas = ["pera", "maçã"]
