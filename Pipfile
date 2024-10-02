@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
 flake8 = "*"
 black = "*"
 isort = "*"
