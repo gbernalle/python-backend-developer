@@ -35,6 +35,20 @@ def excluir_registro(con, cursor, id):
     con.commit()
 
 
+def inserir_muitos(con, cursor, dados):
+    cursor.executemany("INSERT INTO clientes (nome, email) VALUES (?,?)", dados)
+    con.commit()
+
+
 # inserir_registro(con, cursor, "Tester02", "teste@novo.com")
 # atualizar_registro(con,cursor,"Guilherme Novo", "gui@novo.com", 1)
 # excluir_registro(con, cursor, 3)
+
+dados = [
+    ("Tester2", "tester02@gmail.com"),
+    ("Tester3", "tester03@gmail.com"),
+    ("Tester4", "tester04@gmail.com"),
+    ("Tester5", "tester05@gmail.com"),
+]
+
+inserir_muitos(con, cursor, dados)
